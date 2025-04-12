@@ -42,8 +42,8 @@ Partial Class CarRental
         KilometersRadioButton = New RadioButton()
         MilesRadioButton = New RadioButton()
         DiscountGroupBox = New GroupBox()
-        CheckBox2 = New CheckBox()
-        CheckBox1 = New CheckBox()
+        SeniorDiscountCheckBox = New CheckBox()
+        AAADiscountCheckBox = New CheckBox()
         CalculateButton = New Button()
         ClearButton = New Button()
         SummaryButton = New Button()
@@ -225,8 +225,8 @@ Partial Class CarRental
         ' 
         ' DiscountGroupBox
         ' 
-        DiscountGroupBox.Controls.Add(CheckBox2)
-        DiscountGroupBox.Controls.Add(CheckBox1)
+        DiscountGroupBox.Controls.Add(SeniorDiscountCheckBox)
+        DiscountGroupBox.Controls.Add(AAADiscountCheckBox)
         DiscountGroupBox.Location = New Point(740, 580)
         DiscountGroupBox.Name = "DiscountGroupBox"
         DiscountGroupBox.Size = New Size(592, 193)
@@ -234,25 +234,25 @@ Partial Class CarRental
         DiscountGroupBox.TabStop = False
         DiscountGroupBox.Text = "Enter Any discounts"
         ' 
-        ' CheckBox2
+        ' SeniorDiscountCheckBox
         ' 
-        CheckBox2.AutoSize = True
-        CheckBox2.Location = New Point(52, 119)
-        CheckBox2.Name = "CheckBox2"
-        CheckBox2.Size = New Size(124, 29)
-        CheckBox2.TabIndex = 1
-        CheckBox2.Text = "CheckBox2"
-        CheckBox2.UseVisualStyleBackColor = True
+        SeniorDiscountCheckBox.AutoSize = True
+        SeniorDiscountCheckBox.Location = New Point(52, 119)
+        SeniorDiscountCheckBox.Name = "SeniorDiscountCheckBox"
+        SeniorDiscountCheckBox.Size = New Size(220, 29)
+        SeniorDiscountCheckBox.TabIndex = 1
+        SeniorDiscountCheckBox.Text = "Senior Citizen Discount"
+        SeniorDiscountCheckBox.UseVisualStyleBackColor = True
         ' 
-        ' CheckBox1
+        ' AAADiscountCheckBox
         ' 
-        CheckBox1.AutoSize = True
-        CheckBox1.Location = New Point(52, 44)
-        CheckBox1.Name = "CheckBox1"
-        CheckBox1.Size = New Size(124, 29)
-        CheckBox1.TabIndex = 0
-        CheckBox1.Text = "CheckBox1"
-        CheckBox1.UseVisualStyleBackColor = True
+        AAADiscountCheckBox.AutoSize = True
+        AAADiscountCheckBox.Location = New Point(52, 44)
+        AAADiscountCheckBox.Name = "AAADiscountCheckBox"
+        AAADiscountCheckBox.Size = New Size(221, 29)
+        AAADiscountCheckBox.TabIndex = 0
+        AAADiscountCheckBox.Text = "AAA Member Discount"
+        AAADiscountCheckBox.UseVisualStyleBackColor = True
         ' 
         ' CalculateButton
         ' 
@@ -437,8 +437,8 @@ Partial Class CarRental
     Friend WithEvents DiscountGroupBox As GroupBox
     Friend WithEvents KilometersRadioButton As RadioButton
     Friend WithEvents MilesRadioButton As RadioButton
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents SeniorDiscountCheckBox As CheckBox
+    Friend WithEvents AAADiscountCheckBox As CheckBox
     Friend WithEvents CalculateButton As Button
     Friend WithEvents ClearButton As Button
     Friend WithEvents SummaryButton As Button
